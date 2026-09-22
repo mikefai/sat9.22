@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@layer base {
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #111827;
+    background-color: #f9fafb;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Custom selection and highlights */
+.highlight-yellow {
+  background-color: #fef08a !important;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.highlight-blue {
+  background-color: #bae6fd !important;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.highlight-pink {
+  background-color: #fbcfe8 !important;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+/* Custom Bluebook-like buttons and inputs */
+.bluebook-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.bluebook-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+.bluebook-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+.bluebook-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Strikethrough style */
+.option-struck {
+  opacity: 0.45;
+  text-decoration: line-through;
+  background-color: #f3f4f6;
+}
