@@ -45,9 +45,9 @@ export interface Question {
     B: string;
     C: string;
     D: string;
-  };
+  } | null;
   correctAnswer: 'A' | 'B' | 'C' | 'D' | string;
-  acceptedGridInAnswers?: string[];
+  acceptedGridInAnswers?: string[] | null;
   explanation: string;
   distractorAnalysis?: {
     [key: string]: string;
